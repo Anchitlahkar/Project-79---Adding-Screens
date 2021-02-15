@@ -2,4 +2,4 @@
 # Password: password
 
   
-## This Project only workes in expo version 38
+## This Project only workes in expo v38.0.0
