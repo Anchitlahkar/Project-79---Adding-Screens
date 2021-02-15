@@ -9,7 +9,7 @@ import {
   KeyboardAvoidingView,
   FlatList,
 } from 'react-native';
-import { MyHeader } from '../components/MyHeader';
+import MyHeader from '../components/MyHeader';
 import db from '../config';
 import firebase from 'firebase';
 import { ListItem } from 'react-native-elements';
@@ -41,6 +41,7 @@ export default class DonatetBookScreen extends React.Component {
     console.log(this.state.requestedBookList);
     return (
       <View>
+      <MyHeader Text="Exchange Item" />
         <FlatList
           keyExtractor={(item, index) => index.toString()}
           data={this.state.requestedBookList}
