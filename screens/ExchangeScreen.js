@@ -9,7 +9,7 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 
-import { MyHeader } from '../components/MyHeader';
+import MyHeader from '../components/MyHeader';
 import db from '../config';
 import firebase from 'firebase';
 
@@ -56,6 +56,7 @@ export default class RequestBookScreen extends React.Component {
   render() {
     return (
       <View>
+      <MyHeader Text= 'Request Item'/>
         <KeyboardAvoidingView style={styles.keyboardAvoidingViewStyle}>
           <TextInput
             style={styles.textInputStyle}
